@@ -59,13 +59,13 @@ class MazeSolver:
         for nr, nc in path:
             r=nr
             c= nc
-            if maze_grid[r+1,c] ==0:
+            if self.maze_grid[r+1,c] ==0:
                 r = r-5
-            if maze_grid[r-1,c] ==0:
+            if self.maze_grid[r-1,c] ==0:
                 r = r+5
-            if maze_grid[r,c+1] ==0:
+            if self.maze_grid[r,c+1] ==0:
                 c = c-5
-            if maze_grid[r,c - 1] ==0:
+            if self.maze_grid[r,c - 1] ==0:
                 c = c+5
 
             if nc == c and nr == r:
